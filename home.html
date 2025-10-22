@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2035 - Gadgets & Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#" class="nav-link active" data-text="HOME">HOME</a>
+            <a href="#" class="nav-link" data-text="SHOP">SHOP</a>
+            <a href="#" class="nav-link contact-btn" data-text="CONTACT">CONTACT</a>
+        </div>
+        <div class="nav-right">
+            <div class="search-container">
+                <img src="Photos/serch.png" alt="Search" class="search-icon" id="searchIcon">
+                <input type="text" class="search-box" id="searchBox" placeholder="Search products...">
+            </div>
+            <div class="settings-container">
+                <div class="settings-icon" id="settingsIcon">⚙️</div>
+                <div class="settings-dropdown" id="settingsDropdown">
+                    <div class="settings-item">
+                        <span>Theme:</span>
+                        <select id="themeSelector" class="theme-selector">
+                            <option value="cyberpunk">Cyberpunk</option>
+                            <option value="neon">Neon Green</option>
+                            <option value="purple">Purple Haze</option>
+                            <option value="orange">Orange Fire</option>
+                        </select>
+                    </div>
+                    <div class="settings-item signout-item" id="signOutBtn">
+                        <span>🚪 Sign Out</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-icon">🛒</div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="main-title">GADGETS & ACCESSORIES</h1>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Photos/Watch.png" alt="Smartwatch" class="product-img">
+                </div>
+                <h3 class="product-name">SMARTWATCH</h3>
+                <button class="buy-btn">BUY</button>
+<button class="add-cart-btn">ADD TO CART</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Photos/VR.png" alt="VR Headset" class="product-img">
+                </div>
+                <h3 class="product-name">VR HEADSET</h3>
+                <button class="buy-btn">BUY</button>
+<button class="add-cart-btn">ADD TO CART</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Photos/headphine.png" alt="Wireless Earbuds" class="product-img">
+                </div>
+                <h3 class="product-name">WIRELESS EARUDS</h3>
+                <button class="buy-btn">BUY</button>
+<button class="add-cart-btn">ADD TO CART</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Photos/Phone.png" alt="Smartphone" class="product-img">
+                </div>
+                <h3 class="product-name">SMARTPHONE</h3>
+                <button class="buy-btn">BUY</button>
+<button class="add-cart-btn">ADD TO CART</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Photos/headphine.png" alt="Headphones" class="product-img">
+                </div>
+                <h3 class="product-name">HEADPHONES</h3>
+                <button class="buy-btn">BUY</button>
+<button class="add-cart-btn">ADD TO CART</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Photos/Keyborad.png" alt="Gaming Keyboard" class="product-img">
+                </div>
+                <h3 class="product-name">GAMING KEYBOARD</h3>
+                <button class="buy-btn">BUY</button>
+<button class="add-cart-btn">ADD TO CART</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Photos/spekaer.png" alt="Smart Speaker" class="product-img">
+                </div>
+                <h3 class="product-name">SMART SPEAKER</h3>
+                <button class="buy-btn">BUY</button>
+<button class="add-cart-btn">ADD TO CART</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Photos/Mic.png" alt="Gaming Microphone" class="product-img">
+                </div>
+                <h3 class="product-name">GAMING MICROPHONE</h3>
+                <button class="buy-btn">BUY</button>
+<button class="add-cart-btn">ADD TO CART</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>CONTACT & HELP</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>EMAIL</h3>
+                    <p>ks6116@srmist.edu.in</p>
+                </div>
+                <div class="contact-item">
+                    <h3>PHONE</h3>
+                    <p>9571922959</p>
+                </div>
+                <div class="contact-item">
+                    <h3>SUPPORT HOURS</h3>
+                    <p>24/7 Available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buy Now Modal -->
+    <div id="buyModal" class="buy-modal">
+        <div class="buy-modal-content">
+            <span class="buy-close">&times;</span>
+            <h3 id="buyProductName">BUY PRODUCT</h3>
+            <div class="platform-buttons">
+                <button class="platform-btn amazon" onclick="buyOnPlatform('amazon')">
+                    BUY ON AMAZON
+                </button>
+                <button class="platform-btn flipkart" onclick="buyOnPlatform('flipkart')">
+                    BUY ON FLIPKART
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Theme Transition Overlay -->
+    <div class="theme-transition-overlay" id="themeOverlay"></div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2035 - Shopping Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cart-page">
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="home.html" class="nav-link" data-text="HOME">HOME</a>
+            <a href="#" class="nav-link" data-text="SHOP">SHOP</a>
+            <a href="#" class="nav-link contact-btn" data-text="CONTACT">CONTACT</a>
+        </div>
+        <div class="nav-right">
+            <div class="search-container">
+                <div class="search-icon" id="searchIcon">🔍</div>
+                <input type="text" class="search-box" id="searchBox" placeholder="Search products...">
+            </div>
+            <div class="cart-icon active">🛒</div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="main-title">SHOPPING CART</h1>
+        
+        <div class="cart-container">
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            
+            <div class="cart-empty" id="cartEmpty">
+                <div class="empty-icon">🛒</div>
+                <h2>Your cart is empty</h2>
+                <p>Add some futuristic gadgets to get started!</p>
+                <a href="home.html" class="continue-shopping-btn">CONTINUE SHOPPING</a>
+            </div>
+            
+            <div class="cart-summary" id="cartSummary" style="display: none;">
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping:</span>
+                    <span>FREE</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>CONTACT & HELP</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>EMAIL</h3>
+                    <p>ks6116@srmist.edu.in</p>
+                </div>
+                <div class="contact-item">
+                    <h3>PHONE</h3>
+                    <p>9571922959</p>
+                </div>
+                <div class="contact-item">
+                    <h3>SUPPORT HOURS</h3>
+                    <p>24/7 Available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
